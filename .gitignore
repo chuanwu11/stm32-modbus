@@ -1,0 +1,61 @@
+# ==========================================
+# STM32 通用忽略规则（Keil MDK / CubeIDE / GCC）
+# ==========================================
+
+# ---------- Keil uVision ----------
+Objects/
+Listings/
+*.uvguix
+*.uvguix.*
+*.uvoptx
+*.build_log.htm
+*.plg
+*.dep
+*.scvd
+DebugConfig/
+RTE/
+JLinkLog.txt
+
+# ---------- STM32CubeMX / CubeIDE ----------
+.mxproject
+.settings/
+Debug/
+Release/
+*.launch
+.cproject
+.project
+
+# ---------- 编译产物 ----------
+*.o
+*.obj
+*.d
+*.axf
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.su
+*.crf
+*.sct
+*.disasm
+*.build_log
+
+# ---------- 敏感配置（切勿提交！）----------
+# 存放 WiFi 密码、云平台密钥等私密信息
+config.h
+secrets.h
+*_secret.*
+.env
+
+# ---------- 编辑器 / IDE ----------
+.vscode/
+.idea/
+*.user
+*.bak
+
+# ---------- 系统杂项 ----------
+Thumbs.db
+.DS_Store
+*.log
+*.tmp
